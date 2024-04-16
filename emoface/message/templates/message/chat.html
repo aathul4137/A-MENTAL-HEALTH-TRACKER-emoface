@@ -1,0 +1,55 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{#<form>#}
+{#{% extends 'temp/user.html' %}#}
+
+{#{% block base %}#}
+{#    <form>#}
+{#{% csrf_token %}#}
+    <table>
+        <tr>
+            <td>Message</td>
+            <td><input type="text" id="msg" name="msg"></td>
+            <td><button id="sub">Send</button></td>
+{#            <td><input type="submit" id="sub" value="send"></td>#}
+        </tr>
+{#        <tr>#}
+{#            <td>Response</td>#}
+{#            <td><input type="text" id="resp" name="resp"></td>#}
+{#        </tr>#}
+
+
+    </table>
+    <div id="cpar"></div>
+{#</form>#}
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+
+       $("#sub").click(function () {
+            var msg = $("#msg").val()
+            $("#cpar").append('<div>You :'+ msg+'</div>')
+            $.ajax({
+                url:'/message/chat/',
+                data:{
+                    'cmsg':msg,
+                    },
+                dataType:'json',
+                success:function (data) {
+                    //alert(data.cresp)
+                    $("#cpar").append('<div>Bot :'+data.cresp+'</div>')
+
+           }
+       })
+    })
+
+
+
+</script>
+{#{% endblock %}#}
