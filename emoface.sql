@@ -215,24 +215,7 @@ CREATE TABLE `django_migrations` (
 --
 
 INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
-(1, 'contenttypes', '0001_initial', '2023-03-12 07:29:15.460978'),
-(2, 'auth', '0001_initial', '2023-03-12 07:29:15.983267'),
-(3, 'admin', '0001_initial', '2023-03-12 07:29:16.140351'),
-(4, 'admin', '0002_logentry_remove_auto_add', '2023-03-12 07:29:16.155999'),
-(5, 'admin', '0003_logentry_add_action_flag_choices', '2023-03-12 07:29:16.171620'),
-(6, 'contenttypes', '0002_remove_content_type_name', '2023-03-12 07:29:16.234377'),
-(7, 'auth', '0002_alter_permission_name_max_length', '2023-03-12 07:29:16.291582'),
-(8, 'auth', '0003_alter_user_email_max_length', '2023-03-12 07:29:16.314258'),
-(9, 'auth', '0004_alter_user_username_opts', '2023-03-12 07:29:16.329778'),
-(10, 'auth', '0005_alter_user_last_login_null', '2023-03-12 07:29:16.372258'),
-(11, 'auth', '0006_require_contenttypes_0002', '2023-03-12 07:29:16.377484'),
-(12, 'auth', '0007_alter_validators_add_error_messages', '2023-03-12 07:29:16.377484'),
-(13, 'auth', '0008_alter_user_username_max_length', '2023-03-12 07:29:16.409257'),
-(14, 'auth', '0009_alter_user_last_name_max_length', '2023-03-12 07:29:16.424901'),
-(15, 'auth', '0010_alter_group_name_max_length', '2023-03-12 07:29:16.456137'),
-(16, 'auth', '0011_update_proxy_permissions', '2023-03-12 07:29:16.471836'),
-(17, 'auth', '0012_alter_user_first_name_max_length', '2023-03-12 07:29:16.504538'),
-(18, 'sessions', '0001_initial', '2023-03-12 07:29:16.550858');
+
 
 -- --------------------------------------------------------
 
@@ -272,17 +255,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`login_id`, `username`, `password`, `u_id`, `type`) VALUES
-(2, 'aswani', 'aswani@123', 22, 'user'),
-(3, 'aswani', 'aswani@123', 23, 'user'),
-(4, 'athul', 'athul@123', 24, 'user'),
-(5, 'chithra', 'chithra369', 25, 'user'),
-(6, 'abc', '', 26, 'user'),
-(7, 'abc', 's', 27, 'user'),
-(8, 'aaaaa', 'athul', 28, 'user'),
-(9, 'babin', '123456', 29, 'user'),
-(10, 'anju', 'anju', 30, 'user'),
-(11, 'aa', 'cpt', 31, 'user'),
-(12, 'shythya', 'shy', 32, 'user');
+
 
 -- --------------------------------------------------------
 
@@ -346,37 +319,7 @@ CREATE TABLE `register` (
 --
 
 INSERT INTO `register` (`register_id`, `firstname`, `lastname`, `age`, `gender`, `email_id`, `password`) VALUES
-(1, 'gcngn', 'ggfcfgf', '0000-00-00', 'male', 'gg@gmail', '1234'),
-(2, 'gcvhvngn', 'ggfcfgf', '0000-00-00', 'male', 'gg@gmail', '1234'),
-(3, 'gcvhvngn', 'ggfcfgf', '0000-00-00', 'male', 'gg@gmail', '1234'),
-(4, 'gchjyjvhvngn', 'ggfcfgf', '0000-00-00', 'male', 'gg@gmail', '1234'),
-(5, 'athul', 'unni', '0000-00-00', 'male', 'athulunni310@gmail.c', '123'),
-(6, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(7, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(8, 'aswani', 'achu', '0000-00-00', 'female', 'aswanip@gmail.com', 'aswani@123'),
-(9, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(10, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(11, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(12, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(13, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(14, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(15, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(16, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(17, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(18, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(19, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(20, 'chithra', 'seemu', '0000-00-00', 'female', 'chithraseemu@gmail.c', 'seemu@9'),
-(22, 'aswani', 'achu', '0000-00-00', 'female', 'aswanip2019@gmail.co', 'aswani@123'),
-(23, 'aswani', 'achu', '0000-00-00', 'female', 'aswanip2019@gmail.co', 'aswani@123'),
-(24, 'athul', 'unni', '0000-00-00', 'male', 'athul123@gmail.com', 'athul@123'),
-(25, 'chithra', 'cpt', '0000-00-00', 'female', 'chithsree369@gmail.com', 'chithra369'),
-(26, 'abc', '', '0000-00-00', 'female', '', ''),
-(27, 'abc', 'a', '0000-00-00', 'male', 's', 's'),
-(28, 'aaaaa', 'ccc', '0000-00-00', '0', '1234', 'athul'),
-(29, 'babin', 'das', '0000-00-00', 'male', 'babin@gmail.com', '123456'),
-(30, 'anju', 's', '0000-00-00', 'female', 'a@gmail.com', 'anju'),
-(31, 'aa', 'js', '0000-00-00', 'male', 'abccc@gmail.com', 'cpt'),
-(32, 'shythya', 'menon', '2023-06-13', 'female', 'shy@gmail.com', 'shy');
+
 
 -- --------------------------------------------------------
 
